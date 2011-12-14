@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  mwf1: MyString
+  mwf2: MyString
+  mwf3: MyString
+  tth1: MyString
+  tth2: MyString
+  tth3: MyString
+
+two:
+  name: MyString
+  mwf1: MyString
+  mwf2: MyString
+  mwf3: MyString
+  tth1: MyString
+  tth2: MyString
+  tth3: MyString
