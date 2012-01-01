@@ -5,6 +5,7 @@ class CreateSkeds < ActiveRecord::Migration
       t.string :mwf1
       t.string :mwf2
       t.string :mwf3
+	  t.string :mwf4
       t.string :tth1
       t.string :tth2
       t.string :tth3

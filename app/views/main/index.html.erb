@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	 <title>First SideWays</title>
+     <style type="text/css" media="screen"> 
+     /*<![CDATA[*/
+		body {
+			width: 13000px;
+			margin: 0;
+		}
+
+		.panel {
+			width: 1030px;
+			float: left;
+			padding-left: 40px;
+			padding-right: 1040px;
+			margin-top: 45px;
+			background: #eee;
+		}
+		
+		#banner {
+			position: fixed;
+		}
+		
+		#banner ul {
+			line-height: 45px;
+			margin: 0 30px;
+			padding: 0;
+		}
+		
+		#banner ul li {
+			display: inline;
+			margin-right: 20px;
+		}
+		/*]]>*/
+		</style>
+     <script src="/jquery-1.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+	 <script type="text/javascript" charset="utf-8">
+	 $(document).ready(function() {
+       $("#banner a").bind("click",function(event){
+         event.preventDefault();
+         var target = $(this).attr("href");
+          $("html, body").stop().animate({
+            scrollLeft: $(target).offset().left,
+            scrollTop: $(target).offset().top
+            }, 1200);
+         });
+     });
+    </script>
+</head>
+<body>
+  <div id="banner">
+  <ul>
+  <b>Departments:</b>&nbsp;&nbsp;&nbsp;
+  <b>
+    <a href="#1">Employability</a>&nbsp;&nbsp;&nbsp;
+  </b>
+  <b>
+    <a href="#2">English</a>&nbsp;&nbsp;&nbsp;
+  </b>
+  <b>
+    <a href="#3">Math</a>&nbsp;&nbsp;&nbsp;
+  </b>
+  <b>
+    <a href="#4">Reading</a>&nbsp;&nbsp;&nbsp;
+  </b>
+  <b>
+    <a href="#5">Social Studies</a>&nbsp;&nbsp;&nbsp;
+  </b>
+  <b>
+    <a href="#6">Writing</a>
+  </b>
+  
+  </ul>
+ </div>
+ <div id="1" class="panel" basefont size=1> 
+  <h3>Employability Class Schedule</h3>
+   <table>
+    <tr>
+	<td>MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+   	<td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+   	<td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>	
+	</tr>
+	<tr>
+    <td><%= link_to "7:00-8:30", :controller => "emplo1", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "8:31-10:01", :controller => "emplo2", :id => @sked %></td>
+   	<td>&nbsp;&nbsp;&nbsp;<%= link_to "10:02-12:02", :controller => "emplo3", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "1:04-2:34", :controller => "emplo4", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "2:35-4:05", :controller => "emplo5", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "7:00-8:30", :controller => "emplo6", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "8:31-10:01", :controller => "emplo7", :id => @sked %></td>
+   	<td>&nbsp;&nbsp;&nbsp;<%= link_to "10:02-12:02", :controller => "emplo8", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "1:04-2:34", :controller => "emplo9", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "2:35-4:05", :controller => "emplo10", :id => @sked %></td>		
+    </tr>
+   </table>
+ </div>
+  
+<div id="2" class="panel"> 
+  <h3>English Class Schedule</h3>
+  <table>
+    <tr>
+	<td>MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+   	<td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+   	<td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>	
+	</tr>
+    <tr>
+    <td><%= link_to "7:00-8:30", :controller => "engl1", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "8:31-10:01", :controller => "engl2", :id => @sked %></td>
+   	<td>&nbsp;&nbsp;&nbsp;<%= link_to "10:02-12:02", :controller => "engl3", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "1:04-2:34", :controller => "engl4", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "2:35-4:05", :controller => "engl5", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "7:00-8:30", :controller => "engl6", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "8:31-10:01", :controller => "engl7", :id => @sked %></td>
+   	<td>&nbsp;&nbsp;&nbsp;<%= link_to "10:02-12:02", :controller => "engl8", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "1:04-2:34", :controller => "engl9", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "2:35-4:05", :controller => "engl10", :id => @sked %></td>	
+    </tr>
+   </table>
+  </div>
+  
+ <div id="3" class="panel"> 
+  <h3>Math Class Schedule</h3>
+  <table>
+    <tr>
+	<td>MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+   	<td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+   	<td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>	
+	</tr>
+    <tr>
+    <td><%= link_to "7:00-8:30", :controller => "math1", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "8:31-10:01", :controller => "math2", :id => @sked %></td>
+   	<td>&nbsp;&nbsp;&nbsp;<%= link_to "10:02-12:02", :controller => "math3", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "1:04-2:34", :controller => "math4", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "2:35-4:05", :controller => "math5", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "7:00-8:30", :controller => "math6", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "8:31-10:01", :controller => "math7", :id => @sked %></td>
+   	<td>&nbsp;&nbsp;&nbsp;<%= link_to "10:02-12:02", :controller => "math8", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "1:04-2:34", :controller => "math9", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "2:35-4:05", :controller => "math10", :id => @sked %></td>	
+    </tr>
+   </table>
+  </div>
+  
+ <div id="4" class="panel"> 
+  <h3>Reading Class Schedule</h3>
+  <table>
+    <tr>
+	<td>MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+   	<td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+   	<td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>	
+	</tr>
+    <tr>
+    <td><%= link_to "7:00-8:30", :controller => "read1", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "8:31-10:01", :controller => "read2", :id => @sked %></td>
+   	<td>&nbsp;&nbsp;&nbsp;<%= link_to "10:02-12:02", :controller => "read3", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "1:04-2:34", :controller => "read4", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "2:35-4:05", :controller => "read5", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "7:00-8:30", :controller => "read6", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "8:31-10:01", :controller => "read7", :id => @sked %></td>
+   	<td>&nbsp;&nbsp;&nbsp;<%= link_to "10:02-12:02", :controller => "read8", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "1:04-2:34", :controller => "read9", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "2:35-4:05", :controller => "read10", :id => @sked %></td>	
+    </tr>
+   </table>
+  </div>
+   <div id="5" class="panel" basefont size=1> 
+  <h3>Social Studies Class Schedule</h3>
+   <table>
+    <tr>
+	<td>MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+   	<td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+   	<td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>	
+	</tr>   
+    <tr>
+    <td><%= link_to "7:00-8:30", :controller => "ss1", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "8:31-10:01", :controller => "ss2", :id => @sked %></td>
+   	<td>&nbsp;&nbsp;&nbsp;<%= link_to "10:02-12:02", :controller => "ss3", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "1:04-2:34", :controller => "ss4", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "2:35-4:05", :controller => "ss5", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "7:00-8:30", :controller => "ss6", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "8:31-10:01", :controller => "ss7", :id => @sked %></td>
+   	<td>&nbsp;&nbsp;&nbsp;<%= link_to "10:02-12:02", :controller => "ss8", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "1:04-2:34", :controller => "ss9", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "2:35-4:05", :controller => "ss10", :id => @sked %></td>	
+    </tr>
+	
+   </table>
+ </div>
+  <div id="6" class="panel" basefont size=1> 
+  <h3>Writing Class Schedule</h3>
+   <table>
+    <tr>
+	<td>MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+   	<td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;MWF</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+   	<td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>
+    <td>&nbsp;&nbsp;&nbsp;TTh</td>	
+	</tr>   
+    <tr>
+    <td><%= link_to "7:00-8:30", :controller => "write1", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "8:31-10:01", :controller => "write2", :id => @sked %></td>
+   	<td>&nbsp;&nbsp;&nbsp;<%= link_to "10:02-12:02", :controller => "write3", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "1:04-2:34", :controller => "write4", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "2:35-4:05", :controller => "write5", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "7:00-8:30", :controller => "write6", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "8:31-10:01", :controller => "write7", :id => @sked %></td>
+   	<td>&nbsp;&nbsp;&nbsp;<%= link_to "10:02-12:02", :controller => "write8", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "1:04-2:34", :controller => "write9", :id => @sked %></td>
+    <td>&nbsp;&nbsp;&nbsp;<%= link_to "2:35-4:05", :controller => "write10", :id => @sked %></td>
+	</tr>
+   </table>
+ </div>
+</body>
+</html>
+
+
