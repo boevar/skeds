@@ -10,16 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111214090719) do
+ActiveRecord::Schema.define(:version => 20120108151630) do
 
   create_table "skeds", :force => true do |t|
     t.string   "name"
     t.string   "mwf1"
     t.string   "mwf2"
     t.string   "mwf3"
+    t.string   "mwf4"
+    t.string   "mwf5"
     t.string   "tth1"
     t.string   "tth2"
     t.string   "tth3"
+    t.string   "tth4"
+    t.string   "tth5"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

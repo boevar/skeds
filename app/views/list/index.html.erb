@@ -1,0 +1,50 @@
+<h2>Class Schedule of Each Student <h3>(<i>Note: AM students don't have 4th and 5th; PM students don't have 1st and 2nd.</i>)</h3></h2>
+
+<table border="2" cellpadding="4" cellspacing="2" width="100%">
+  <tr style="background-color:blue;color:white">
+    <th>Days</th>
+    <th>MWF, 7:00-8:30</th>
+    <th>MWF, 8:31-10:01</th>
+    <th>MWF, 10:02-12:02</th>
+	<th>MWF, 1:04-2:34</th>
+	<th>MWF, 2:35-4:05</th>
+    <th>TTh, 7:00-8:30</th>
+    <th>TTh, 8:31-10:01</th>
+    <th>TTh, 10:02-12:02</th>
+    <th>TTh, 1:04-2:34</th>
+    <th>TTh, 2:35-4:05</th>	
+</tr>
+    <tr style="background-color:gray;color:white">
+    <th>Periods</th>
+    <th>1st</th>
+    <th>2nd</th>
+    <th>3rd</th>
+	<th>4th</th>
+	<th>5th</th>
+    <th>1st</th>
+    <th>2nd</th>
+    <th>3rd</th>
+    <th>4th</th>
+    <th>5th</th>	
+  </tr>
+
+<% @skeds.each do |sked| %>
+  <tr>
+    <td><%= sked.name %></td>
+    <td><%= sked.mwf1 %></td>
+    <td><%= sked.mwf2 %></td>
+    <td><%= sked.mwf3 %></td>
+    <td><%= sked.mwf4 %></td>
+    <td><%= sked.mwf5 %></td>	
+    <td><%= sked.tth1 %></td>
+    <td><%= sked.tth2 %></td>
+    <td><%= sked.tth3 %></td>
+    <td><%= sked.tth4 %></td>
+    <td><%= sked.tth5 %></td>	
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

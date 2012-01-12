@@ -2,7 +2,7 @@ class Math6Controller < ApplicationController
   # GET /skeds
   # GET /skeds.xml
   def index
-    @skeds = Sked.find(:all, :conditions => {:tth1 => '6Math'}, :order => "name")
+    @skeds = Sked.find(:all, :conditions => {:tth1 => '1Math'}, :order => "name")
 
     respond_to do |format|
       format.html # index.html.erb

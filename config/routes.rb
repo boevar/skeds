@@ -1,7 +1,7 @@
 Skeds::Application.routes.draw do
   resources :main
   resources :skeds
-  resources :skeds1
+  resources :list
   resources :engl1
   resources :engl2
   resources :engl3

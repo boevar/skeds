@@ -1,4 +1,4 @@
-<h2>Master List of Students</h2>
+<h2>List of Students</h2>
 
 <table>
   <tr>
@@ -23,7 +23,6 @@
     <td><%= sked.tth1 %></td>
     <td><%= sked.tth2 %></td>
     <td><%= sked.tth3 %></td>
-    <td><%= link_to 'Show', sked %></td>
     <td><%= link_to 'Edit', edit_sked_path(sked) %></td>
     <td><%= link_to 'Destroy', sked, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
@@ -32,4 +31,4 @@
 
 <br />
 
-<%= link_to 'New Sked', new_sked_path %>
+<center><%= link_to 'New Sked', new_sked_path %></center>
