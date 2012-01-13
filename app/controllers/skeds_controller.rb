@@ -2,7 +2,7 @@ class SkedsController < ApplicationController
   # GET /skeds
   # GET /skeds.xml
   def index
-    @skeds = Sked.all
+    @skeds = Sked.all(:order => "name")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -44,7 +44,7 @@ class SkedsController < ApplicationController
 
     respond_to do |format|
       if @sked.save
-        format.html { redirect_to(@sked, :notice => 'Sked was successfully created.') }
+        format.html { redirect_to(@sked, :notice => 'Schedule was successfully created.') }
         format.xml  { render :xml => @sked, :status => :created, :location => @sked }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class SkedsController < ApplicationController
 
     respond_to do |format|
       if @sked.update_attributes(params[:sked])
-        format.html { redirect_to(@sked, :notice => 'Sked was successfully updated.') }
+        format.html { redirect_to(@sked, :notice => 'Schedule was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

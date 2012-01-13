@@ -6,33 +6,83 @@
 </p>
 
 <p>
-  <b>Mwf1:</b>
+  <% if @sked.mwf1.empty? %>
+  <% else %>
+  <b>MWF, 7:00-8:30</b>
   <%= @sked.mwf1 %>
+  <% end %>
 </p>
 
 <p>
-  <b>Mwf2:</b>
+  <% if @sked.mwf2.empty? %>
+  <% else %>
+  <b>MWF, 8:31-10:01</b>
   <%= @sked.mwf2 %>
+  <% end %>  
 </p>
 
 <p>
-  <b>Mwf3:</b>
+  <% if @sked.mwf3.empty? %>
+  <% else %>
+  <b>MWF, 10:02-12:02</b>
   <%= @sked.mwf3 %>
+  <% end %>  
 </p>
 
 <p>
-  <b>Tth1:</b>
+  <% if @sked.mwf4.empty? %>
+  <% else %>
+  <b>MWF, 1:04-2:34</b>
+  <%= @sked.mwf4 %>
+  <% end %>  
+</p>
+
+<p>
+  <% if @sked.mwf5.empty? %>
+  <% else %>
+  <b>MWF, 2:35-4:05</b>
+  <%= @sked.mwf5 %>
+  <% end %>  
+</p>
+
+<p>
+  <% if @sked.tth1.empty? %>
+  <% else %>
+  <b>TTh, 7:00-8:30</b>
   <%= @sked.tth1 %>
+  <% end %>  
 </p>
 
 <p>
-  <b>Tth2:</b>
+  <% if @sked.tth2.empty? %>
+  <% else %>
+  <b>TTh, 8:31-10:01</b>
   <%= @sked.tth2 %>
+  <% end %>  
 </p>
 
 <p>
-  <b>Tth3:</b>
+  <% if @sked.tth3.empty? %>
+  <% else %>
+  <b>TTh, 10:02-12:02</b>
   <%= @sked.tth3 %>
+  <% end %>  
+</p>
+
+<p>
+  <% if @sked.tth4.empty? %>
+  <% else %>
+  <b>TTh, 1:04-2:34</b>
+  <%= @sked.tth4 %>
+  <% end %>  
+</p>
+
+<p>
+  <% if @sked.tth5.empty? %>
+  <% else %>
+  <b>TTh, 2:35-4:05</b>
+  <%= @sked.tth5 %>
+  <% end %>
 </p>
 
 
