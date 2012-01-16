@@ -1,4 +1,5 @@
 Skeds::Application.routes.draw do
+ 
   resources :main
   resources :skeds
   resources :list

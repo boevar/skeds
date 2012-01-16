@@ -2,7 +2,7 @@ class Emplo5Controller < ApplicationController
   # GET /skeds
   # GET /skeds.xml
   def index
-    @skeds = Sked.find(:all, :conditions => {:mwf3 => '5Employability'}, :order => "name")
+    @skeds = Sked.find(:all, :conditions => {:mwf3 => '5Employ.'}, :order => "name")
 
     respond_to do |format|
       format.html # index.html.erb
